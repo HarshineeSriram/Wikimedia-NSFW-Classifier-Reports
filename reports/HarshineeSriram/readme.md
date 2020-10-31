@@ -66,8 +66,6 @@ As far as video classification goes, we could either use the image classifier th
 
 Since there are 3 major tasks to be completed in 12 weeks and the major task (around which the other 2 tasks revolve) is to develop a competitive model for image and video classification that can also withstand potential adversarial attacks. One additional task that goes hand-in-hand is developing an easy to understand documentation for further technology developments. 
 
-Events underlined are the default events that Outreachy will host.
-
 | Date        | Task(s) Description |
 | ------------- |:-------------:|
 | December 1 2020	| • Blog prompt: "Introduce yourself" • Work on the dataset building along with the extent of NSFW content needed and the type of classifier to work with. • Address the video content filtration module by determining if it needs to work with the same dataset or a different one with the same framework. |
