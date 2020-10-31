@@ -16,6 +16,7 @@
 12. Awards
 13. Books
 
+___
 
 **Candidate Details**
 
@@ -28,14 +29,14 @@
 **GitHub:** https://github.com/HarshineeSriram <br>
 **Location:** India (UTC +5:30) and, if my study permit is approved, Canada (UTC -7:00) <br>
 **Typical working hours:** 12 PM to 8 PM at (UTC +5:30), and, if my study permit for Canada is approved, (UTC -7:00) <br>
-
+___
 
 **Synopsis of the project**
 
 Wikimedia Commons is an online repository of free-use images, sounds, other media, and JSON files. Anyone can upload media to the Commons portal. The uploads are moderated by members and volunteers of the foundation manually. This project aims to build a classifier that can flag NSFW images/media for review. Upon successful completion of this internship, the intern would have designed, implemented and tested a machine learning model that would be able to classify the image and video media as SFW or NSFW with high accuracy. They would also be given the chance to deploy the model to Wikimedia test and production servers. Further, they would build a data processing pipeline and an API for the model.
 Since this is a scratch project, applicants are required to do some research initially. A basic comparison of the existing NSFW classifiers along with their computational requirements is required. All applicants are expected to read various research papers and draw comparisons between them. They are expected to come up with a report detailing their research, the various options that can be used to implement the model and what they are proposing to do if they are selected. This report should also detail implementational methods and procedures.
 Mentors: @abbasidaniyal and @chtnnh
-
+___
 
 **Expected Internship Tasks**
 
@@ -50,6 +51,7 @@ This task aims at adding support for videos for the same model.
 1.	Video Segmentation: Divide the video into difference scene segments using PySceneDetect or something similar.
 2.	Frame Extraction: From the segmented video clips, extract individual frames using Decord or something similar.
 3.	Feed the individual frames to the NSFW model and generate an overall score for the video.
+___
 
 **My method of approach (Implementation details)**
 
@@ -61,6 +63,7 @@ I believe that the 2 factors that make or break any classifier (irrespective of 
 For now, I would suggest transfer learning with personally constructed layers at the bottom. Based on my recent experiments, MobileNet (version 1) seems to come out on top because it is lightweight and provides a considerably high validation accuracy (96%). However, I will also try to experiment with one-class SVMs, Isolation forests, and Local Outlier Factor if the time permits, but that might mean increasing the dataset capacity further. I believe a vanilla binary classifier would be ideal. Multi-class NSFW (NSFW-artwork, NSFW-torture etc) would just add too much complexity, and there's hardly 1-2 datasets that contain good NSFW sub-categories.  If it is required that an image should have multiple annotations, not just NSFW or SFW, the binary classifier could act as an initial filter and then the native image is passed through Wikimedia's current annotation tool. 
 
 As far as video classification goes, we could either use the image classifier that I will build or we could develop a model that trains on the Porn Dataset for videos (https://sites.google.com/site/pornographydatabase/) which includes clips that are blatantly NSFW (porn) as well as clips that are actually SFW but may be misclassified as NSFW (example: breastfeeding). The second method, of course, is bound by storage constraints for now.
+___
 
 **Proposed Timeline (complete)**
 
@@ -85,6 +88,7 @@ Since there are 3 major tasks to be completed in 12 weeks and the major task (ar
 | February 16 2021 | • Networking skills |
 | February 23 2021 | • Finish everything, model, API, and relevant documentation • Final project progress blog post |
 | March 2 2021 | • Internship wrap up chat •	**FINAL FEEDBACK DUE** |
+___
 
 **Proposed Timeline (just the important parts)**
 
@@ -103,6 +107,7 @@ Since there are 3 major tasks to be completed in 12 weeks and the major task (ar
 1.	Initial Feedback: Comparison of all important classifier models to determine best model in terms of processing requirements
 2.	Mid-point Feedback: Finish building the early stage model and begin with modifications to better suit our inputs and the kind of information we would like to show
 3.	Final Feedback: Build final model, create an API for the same, deploy it, add relevant documentation for the same
+___
 
 **Work completed till date (Project contributions)**
 
@@ -186,10 +191,12 @@ I deployed my model via Flask. It is easy to use and assess the MobileNet model 
 Link to the model.h5 file: https://drive.google.com/file/d/1OnbYjGu_Wj1TIw-4jpi0-i0Nk-ZClHtB/view?usp=sharing
 
 Link: https://github.com/HarshineeSriram/Wikimedia-NSFW-Classifier-Reports/tree/main/reports/HarshineeSriram/keras-flask-image-classifier
+___
 
 **About Me**
 
 Hi! I am Harshinee Sriram and I recently graduated from my undergrad at SRM Institute of Science and Technology, Kattankulathur and will begin my MSc Computer Science program at the University of British Columbia, Vancouver on a full scholarship sometime in 2021 (depending on the COVID 19 situation). I started learning and working in the area of Machine Learning and Deep Learning from 2018, and since then I have had the privilege to work with some outstanding researchers who helped cultivate my skills as a potential researcher in the Artificial Intelligence space.
+___
 
 **Past work experiences**
 
@@ -199,6 +206,7 @@ Hi! I am Harshinee Sriram and I recently graduated from my undergrad at SRM Inst
 | **Remote Research Intern** | Indian Institute of Science (IISc Bengaluru), India | October 2019 - December 2019 | Was selected to be a part of a small team that works on the NeurIPS reproducibility challenge for the 2019 NeurIPS conference. Worked on real-time reinforcement learning - ablation track. |
 |  **Artificial Intelligence Intern - Department of Automation** | Tech Mahindra Pvt. Ltd. Bengaluru, India | June 2019 - July 2019 |  Developed an API that converts speech-to-text reports for medical documents. Conducted unit testing of the generated reports to determine areas of improvement. Worked on Project Terumo by Terumo BCT (a US-based medical devices company) at the Offshore Development Centre (ODC). Developed an image recognition and classification modules for determining if the configurations of the medical equipment are ideal. |
 | **Artificial Intelligence Intern** | National University of Singapore (NUS), Singapore |  December 2018 - January 2019 |  Worked on the Driver Distraction Detection problem. Used video feeds from cameras that focus on the driver's actions to develop a classifier model. Took into account different forms of distraction from media-related to passenger-related. Tested self-built CNNs, Transfer Learning techniques, and LSTMs for classification and evaluation. Used image filtering and feature extraction techniques using R and Python. Some libraries used in this stage were: dplyr and EBImage (for R) and Scikit-Learn (for Python). Worked on data management systems using Apache Hadoop. |
+___
 
 **Projects**
 
@@ -208,6 +216,7 @@ Hi! I am Harshinee Sriram and I recently graduated from my undergrad at SRM Inst
 | **Distracted Driver Detection** |  The major libraries utilized were dplyr and EBImage (for R) and Scikit Learn (for Python). The project uses various techniques and models to find out the most efficient model in distraction/fatigue detection. |
 |  **Project TunnelEnd** |  Created machine learning models to identify places of high alert and growth rates from surveys conducted from the year 2005 to the year 2011, which contains information regarding state-wise statistics of civilian and veteran suicides based on gender, along with their probabilities. | 
 | **Eunoia**|  This project uses Artificial Intelligence to act upon a 2014 Mental Health Survey in order to produce results regarding detection and requirement of treatment. I compare efficiency rates among Logistic Regression, K Neighbors Classifier, and Tree Classifier to obtain the best evaluation metric. |
+___
 
 **Awards**
 
@@ -219,6 +228,7 @@ Hi! I am Harshinee Sriram and I recently graduated from my undergrad at SRM Inst
 | Youngest Researcher Award | Women in Analytics 2019 Conference at Columbus, Ohio, United States |
 | Student Travel Award |  Women in Analytics 2019 Conference at Columbus, Ohio, United States |
 | Best Project Award for Eunoia | Institute of Engineering and Technology (IET) |
+___
 
 **Books**
 1. Author of "The Horrors of Happiness" - opening week category bestseller on Amazon.
