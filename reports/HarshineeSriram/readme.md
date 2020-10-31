@@ -231,5 +231,5 @@ ___
 ___
 
 **Books**
-1. Author of "The Horrors of Happiness" - opening week category bestseller on Amazon.
+1. Author of "The Horrors of Happiness" - opening week category bestseller on Amazon. Link (you could either support me or email me for a free copy): https://www.amazon.com/Horrors-Happiness-Harshinee-Sriram/dp/1728766591/
 2. Co-Author of "Pandora's Box - Horn OK Please" by Karthik Iyengar
